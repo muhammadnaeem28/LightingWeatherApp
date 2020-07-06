@@ -1,6 +1,6 @@
 # LightingWeatherApp
 
-See Salesforce Contact's Weather forecast on record detail page  
+See Salesforce Contact's current Weather on record detail page  
 
 # Installation Instructions
 
