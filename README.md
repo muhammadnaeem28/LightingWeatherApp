@@ -1,4 +1,4 @@
-# LightingWeatherApp
+# LightningWeatherApp
 
 See Salesforce Contact's current Weather on record detail page  
 
