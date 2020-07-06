@@ -1,0 +1,98 @@
+.THIS #weather_wrapper{
+    width: 400px;
+    margin: 0px auto;
+}
+.THIS .weatherCard{
+    width: 400px;
+    height: 200px;
+    font-family: 'Open Sans';
+    position: relative;
+}
+.THIS .currentTemp{
+    width: 220px;
+    height: 200px;
+    background: rgb(41, 41, 41);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.THIS .currentWeather{
+    width: 180px;
+    height: 200px;
+    background: rgb(237, 237, 237);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.THIS .temp{
+    font-size: 32px;
+    text-align: center;
+    display: block;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    padding: 20px 0 0;
+    line-height: 39px;
+}
+.THIS .location{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    display: block;
+}
+.THIS .conditions{
+    
+    font-size: 80px;
+    display: block;
+    padding: 3px 0 0;
+    text-align: center;
+}
+.THIS .info{
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgb(42, 178, 234);
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.THIS .rain {
+    width: 50%;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    line-height: 17px;
+    font-size: 17px;
+}
+.THIS .rain img{
+    width: 27px;position: absolute;left: -1px;top: 5px;
+}
+.THIS .rain::before{
+    display: block;
+    font-size: 40px;
+    left: 6px;
+    top: -4px;
+    position: absolute;
+}
+.THIS .wind {
+    width: 50%;
+    right: -10px;
+    position: absolute;
+    top: 8px;
+    line-height: 17px;
+    font-size: 17px;
+}
+.THIS .wind img{
+    width: 27px;position: absolute;left: -10px;top: 3px;
+}
+.THIS .wind::before{
+    display: block;
+    font-size: 25px;
+    left: -10px;
+    position: absolute;
+    top: 5px;
+}

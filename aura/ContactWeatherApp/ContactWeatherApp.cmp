@@ -1,0 +1,53 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId" 
+                controller="WeatherCompController">
+    <aura:attribute name="recordId" type="Id"  default="0033h000009bgMeAAI" />
+    <aura:attribute name="currentCity" type="String"/>
+    <aura:attribute name="tempMax" type="String"/>
+    <aura:attribute name="tempMin" type="String"/>
+    <aura:attribute name="wind" type="String"/>
+    <aura:attribute name="humidity" type="String"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.getWeather}" />    
+    <div class="slds-p-left_medium slds-p-right_medium">
+        <div id="weather_wrapper">
+            <div class="weatherCard">
+                <div class="currentTemp">
+                    <span class="temp">
+                        
+                        {!v.tempMin}&deg;F
+                        
+                    </span>
+                    <span class="temp" style = 'line-height:26px'>{!v.currentCity}</span>
+                    <span class="temp">
+                        
+                        {!v.tempMax}&deg;F
+                        
+                    </span>
+                </div>
+                <div class="currentWeather">
+                    <span class="conditions">
+                        
+                        
+                        <img style="width: 56%;" src="{!$Resource.weather + '/weather.png'}"/>
+                    </span>
+                    <div class="info">
+                        <span class="rain">
+                            <img src="{!$Resource.weather + '/humidity.png'}"/>
+                            
+                            {!v.humidity}
+                            <br/> 
+                            %</span>
+                        
+                        <span class="wind">
+                            <img src="{!$Resource.weather + '/wind.png'}"/>
+                            
+                            {!v.wind } 
+                            <br/>
+                            MS </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</aura:component>
